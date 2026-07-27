@@ -280,7 +280,7 @@
   .langsw button:not(.on):hover{background:var(--lime)}
 
   /* reveal */
-  .rv{opacity:0;transform:translateY(14px);transition:opacity .5s,transform .5s}
+  .js-anim .rv{opacity:0;transform:translateY(14px);transition:opacity .5s,transform .5s}
   .rv.in{opacity:1;transform:none}
   @media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.bar-fill,.dfill{transition:none}}
 </style>
@@ -316,13 +316,13 @@
     </div>
     <h1 class="rv" data-en="From continuous improvement to |applied AI|" data-es="De la mejora continua a la |IA aplicada|">De la mejora continua a la <span class="hl">IA aplicada</span></h1>
     <p class="lede rv"
-       data-en="I have spent six years working as an engineer in factory plants and logistics hubs. Recently I specialized in AI applied to industry and business at KU Leuven. I believe training models is only part of the job. What matters is understanding the operational problem, weighing the alternatives, and communicating a solution that people can actually put into practice."
+       data-en="I have six years of experience as an engineer in manufacturing plants and logistics operations. More recently, I specialized in applied AI for industry and business at KU Leuven. I see model training as only part of the job. What matters is understanding the operational problem, evaluating the options, and explaining a solution people can actually put into practice."
        data-es="Llevo seis años trabajando como ingeniero en plantas industriales y centros logísticos. Recientemente me especialicé en IA aplicada a la industria y los negocios en KU Leuven. Creo que entrenar modelos es solo una parte del trabajo. Lo importante es entender el problema operativo, evaluar las alternativas y comunicar una solución que las personas puedan llevar a la práctica.">
       Llevo seis años trabajando como ingeniero en plantas industriales y centros logísticos. Recientemente me especialicé en IA aplicada a la industria y los negocios en KU&nbsp;Leuven. Creo que entrenar modelos es solo una parte del trabajo. Lo importante es entender el problema operativo, evaluar las alternativas y comunicar una solución que las personas puedan llevar a la práctica.
     </p>
     <div class="metrics rv">
       <div class="mgrid">
-        <a class="metric" href="#exp"><div class="n">6+</div><div class="l" data-en="Years improving processes and business with data" data-es="Años mejorando procesos y negocio con datos">Años mejorando procesos y negocio con datos</div></a>
+        <a class="metric" href="#exp"><div class="n">6+</div><div class="l" data-en="Years improving operations with data" data-es="Años mejorando procesos y negocio con datos">Años mejorando procesos y negocio con datos</div></a>
         <a class="metric" href="#work"><div class="n">9</div><div class="l" data-en="Shipped AI projects" data-es="Proyectos de IA entregados">Proyectos de IA entregados</div></a>
         <a class="metric" href="#exp"><div class="n">3</div><div class="l" data-en="Countries worked" data-es="Países donde he trabajado">Países donde he trabajado</div></a>
         <a class="metric" href="#about"><div class="n">4</div><div class="l" data-en="Languages spoken" data-es="Idiomas que hablo">Idiomas que hablo</div></a>
@@ -348,11 +348,11 @@
       <div class="tag"><span data-en="MSC THESIS · KU LEUVEN M-GROUP" data-es="TFM · KU LEUVEN M-GROUP">TFM · KU LEUVEN M-GROUP</span><span class="live">BENCHMARK</span></div>
       <h3 data-en="Live Defect Detection with Unsupervised Models" data-es="Detección en vivo de defectos con modelos no supervisados">Detección en vivo de defectos con modelos no supervisados</h3>
       <div class="sub mono" data-en="RETINA · 7 SOTA models · 3 datasets · ~151k images" data-es="RETINA · 7 modelos SOTA · 3 datasets · ~151k imágenes">RETINA · 7 modelos SOTA · 3 datasets · ~151k imágenes</div>
-      <p data-en="Compared 7 anomaly detection models offline against live streaming under sensor noise. The finding: with the right model, performance |holds| in production. |SubspaceAD|, based on feature subspaces, kept the best AUPR both live and under corruption."
+      <p data-en="Benchmarked seven anomaly detection models in both offline and live streaming conditions with simulated sensor noise. The main finding was simple: with the right model, performance |remains stable| in production. |SubspaceAD| achieved the highest AUPR in both normal and noisy conditions."
          data-es="Comparé siete modelos de detección de anomalías en laboratorio y en streaming con ruido de sensor. La principal conclusión fue clara: con el modelo adecuado, el rendimiento |se mantiene| en producción. |SubspaceAD| obtuvo el mejor AUPR tanto en condiciones normales como bajo perturbaciones.">Comparé siete modelos de detección de anomalías en laboratorio y en streaming con ruido de sensor. La principal conclusión fue clara: con el modelo adecuado, el rendimiento <b>se mantiene</b> en producción. <b>SubspaceAD</b> obtuvo el mejor AUPR tanto en condiciones normales como bajo perturbaciones.</p>
       <div class="save">
         <div class="amt">€35–55k<span style="font-size:9px;font-weight:400" data-en="&nbsp;/yr" data-es="&nbsp;/año">&nbsp;/año</span></div>
-        <div class="desc" data-en="Per line: partial replacement of manual visual inspection (~0.5 FTE) plus less scrap and rework downstream. Software pays for itself in under 6 months.«EST»theoretical savings from implementation · software only"
+        <div class="desc" data-en="Per line: reduces manual visual inspection (~0.5 FTE) plus less scrap and rework downstream. Estimated payback is under six months.«EST»theoretical savings from implementation · software only"
              data-es="Por línea: reduce la inspección visual manual (~0,5 FTE), además del scrap y los reprocesos. La inversión se amortiza en menos de seis meses.«EST»ahorro teórico estimado tras implementación · solo software">Por línea: reduce la inspección visual manual (~0,5 FTE), además del scrap y los reprocesos. La inversión se amortiza en menos de seis meses.<span class="est" data-en="theoretical savings from implementation · software only" data-es="ahorro teórico estimado tras implementación · solo software">ahorro teórico estimado tras implementación · solo software</span></div>
       </div>
       <div class="viz">
@@ -383,11 +383,11 @@
       <div class="tag"><span data-en="APPLIED AI · CLIENT: BEKAERT" data-es="IA APLICADA · CLIENTE: BEKAERT">IA APLICADA · CLIENTE: BEKAERT</span><span class="live">CAUSAL AI</span></div>
       <h3 data-en="Explainable Price Forecasting for Raw Materials" data-es="Predicción explicable de precios de materias primas">Predicción explicable de precios de materias primas</h3>
       <div class="sub mono" data-en="DoubleML · SHAP · lithium index · 2011→now" data-es="DoubleML · SHAP · índice del litio · 2011→hoy">DoubleML · SHAP · índice del litio · 2011→hoy</div>
-      <p data-en="A causal framework that separates the real price drivers from confounders, rather than predicting through a closed box. MAPE of 7.2% at one month, with every forecast open to explanation."
+      <p data-en="A causal forecasting model that distinguishes genuine price drivers from confounding variables, instead of relying on a black box model. MAPE of 7.2% at one month, with every forecast remains fully explainable."
          data-es="Un modelo causal que distingue los factores que realmente afectan al precio de las variables de confusión. En lugar de una caja negra, cada predicción puede explicarse. MAPE del 7,2 % a un mes y predicciones completamente explicables.">Un modelo causal que distingue los factores que realmente afectan al precio de las variables de confusión. En lugar de una caja negra, cada predicción puede explicarse. MAPE del 7,2 % a un mes y predicciones completamente explicables.</p>
       <div class="save">
         <div class="amt">€15–25k<span style="font-size:9px;font-weight:400" data-en="&nbsp;/yr" data-es="&nbsp;/año">&nbsp;/año</span></div>
-        <div class="desc" data-en="Hours saved for the purchasing team: manual data collection and chart building (~8h of analyst time per week) now automated, alongside better decisions on when to buy.«EST»theoretical savings from implementation · software only · analyst hours"
+        <div class="desc" data-en="Automates data collection and reporting for the procurement team (around eight analyst hours per week) while supporting better purchasing decisions.«EST»theoretical savings from implementation · software only · analyst hours"
              data-es="Automatiza la recopilación de datos y la creación de informes del equipo de compras (~8 h semanales), además de facilitar mejores decisiones sobre cuándo comprar.«EST»ahorro teórico estimado tras implementación · solo software · horas de analista">Automatiza la recopilación de datos y la creación de informes del equipo de compras (~8 h semanales), además de facilitar mejores decisiones sobre cuándo comprar.<span class="est" data-en="theoretical savings from implementation · software only · analyst hours" data-es="ahorro teórico estimado tras implementación · solo software · horas de analista">ahorro teórico estimado tras implementación · solo software · horas de analista</span></div>
       </div>
       <div class="viz">
@@ -412,11 +412,11 @@
       <div class="tag"><span data-en="CV+NLP · KU LEUVEN" data-es="VISIÓN+NLP · KU LEUVEN">VISIÓN+NLP · KU LEUVEN</span><span class="live">RAG · LLM</span></div>
       <h3 data-en="AI Training Assistant for Manufacturing" data-es="Asistente de formación con IA para fabricación">Asistente de formación con IA para fabricación</h3>
       <div class="sub mono">YOLO11 → RAG → Gemma-2B · en local</div>
-      <p data-en="Take a photo of a component and the system detects it, retrieves the right manual, and generates a quiz with feedback. It runs entirely on site, with no cloud LLM. I built an |evaluation that uses an LLM as a judge| to score the generator on how well its answers stay grounded in the source and stay relevant to the question and context."
+      <p data-en="A user photographs a component, the system identifies it, retrieves the correct manual, and generates a quiz with feedback. The entire pipeline runs locally, with no cloud based LLM. I also developed an |LLM as a judge evaluation framework| to measure how well the generated answers stay grounded in the documentation and answer the user's question."
          data-es="El usuario fotografía un componente, el sistema lo identifica, recupera el manual correspondiente y genera un cuestionario con feedback. Todo funciona en local, sin depender de un LLM en la nube. Además, desarrollé una |evaluación basada en un LLM como juez| para medir hasta qué punto las respuestas están respaldadas por la documentación y responden a la consulta.">El usuario fotografía un componente, el sistema lo identifica, recupera el manual correspondiente y genera un cuestionario con feedback. Todo funciona en local, sin depender de un LLM en la nube. Además, desarrollé una <b>evaluación basada en un LLM como juez</b> para medir hasta qué punto las respuestas están respaldadas por la documentación y responden a la consulta.</p>
       <div class="save">
         <div class="amt">€20–35k<span style="font-size:9px;font-weight:400" data-en="&nbsp;/yr" data-es="&nbsp;/año">&nbsp;/año</span></div>
-        <div class="desc" data-en="Per plant: operators get up to speed faster and trainers spend less time on it, with fewer costly errors from weak initial training.«EST»theoretical savings from implementation · software only"
+        <div class="desc" data-en="Shortens operator onboarding, reduces trainer workload, and helps prevent costly mistakes during initial training.«EST»theoretical savings from implementation · software only"
              data-es="Por planta: reduce el tiempo de formación de nuevos operarios y el tiempo dedicado por los formadores, además de disminuir errores derivados del aprendizaje inicial.«EST»ahorro teórico estimado tras implementación · solo software">Por planta: reduce el tiempo de formación de nuevos operarios y el tiempo dedicado por los formadores, además de disminuir errores derivados del aprendizaje inicial.<span class="est" data-en="theoretical savings from implementation · software only" data-es="ahorro teórico estimado tras implementación · solo software">ahorro teórico estimado tras implementación · solo software</span></div>
       </div>
       <div class="viz">
@@ -443,7 +443,7 @@
       <div class="tag"><span data-en="REALIZATION OF AI · KU LEUVEN × SUPERLINEAR" data-es="REALIZATION OF AI · KU LEUVEN × SUPERLINEAR">REALIZATION OF AI · KU LEUVEN × SUPERLINEAR</span><span class="live">FULL STACK</span></div>
       <h3 data-en="Minifig Match: a face similarity webshop" data-es="Minifig Match: tienda de similitud facial">Minifig Match: tienda de similitud facial</h3>
       <div class="sub mono" data-en="EfficientNet-B0 · face embeddings · AWS · Docker" data-es="EfficientNet-B0 · embeddings faciales · AWS · Docker">EfficientNet-B0 · embeddings faciales · AWS · Docker</div>
-      <p data-en="Upload a selfie and get the LEGO minifigure that looks most like you. The whole flow runs from start to finish: a classifier with multiple labels plus a search by facial similarity, deployed on AWS with active learning. Built with support from |Superlinear|. ‹(a lighter, creative build, with no ROI claim here)›"
+      <p data-en="Upload a selfie and the system finds the LEGO minifigure that looks most like you. It combines multi label classification with facial similarity search and is deployed on AWS using active learning. Developed with support from |Superlinear|."
          data-es="Sube un selfie y obtén la minifigura de LEGO que más se parece a ti. El sistema combina clasificación multietiqueta y búsqueda por similitud facial, desplegado en AWS con active learning. Desarrollado con el apoyo de |Superlinear|.">Sube un selfie y obtén la minifigura de LEGO que más se parece a ti. El sistema combina clasificación multietiqueta y búsqueda por similitud facial, desplegado en AWS con active learning. Desarrollado con el apoyo de <b>Superlinear</b>.</p>
       <div class="viz">
         <div class="vizhead"><span data-en="FACE SIMILARITY — TOP MATCH" data-es="SIMILITUD FACIAL — MEJOR COINCIDENCIA">SIMILITUD FACIAL — MEJOR COINCIDENCIA</span><span class="mono" data-en="LIVE DEMO" data-es="DEMO EN VIVO">DEMO EN VIVO</span></div>
@@ -493,8 +493,8 @@
         <h4 data-en="Technical Audit Coordinator" data-es="Coordinador de auditorías técnicas">Coordinador de auditorías técnicas</h4>
         <div class="org" data-en="UTN · Latin America" data-es="UTN · Latinoamérica">UTN · Latinoamérica</div>
         <ul>
-          <li data-en="Built Python ETL pipelines that automate audit workflows, running cross checks against regulatory datasets at scale." data-es="Desarrollé pipelines ETL en Python para automatizar procesos de auditoría y validar información contra bases regulatorias a gran escala.">Desarrollé pipelines ETL en Python para automatizar procesos de auditoría y validar información contra bases regulatorias a gran escala.</li>
-          <li data-en="Raised audit processing efficiency by |+60%| with Agile and Scrum and custom reporting tools." data-es="Incrementé la eficiencia del procesamiento de auditorías un |60 %| mediante herramientas de reporting y metodologías Agile.">Incrementé la eficiencia del procesamiento de auditorías un <b>60 %</b> mediante herramientas de reporting y metodologías Agile.</li>
+          <li data-en="Built Python ETL pipelines to automate audit workflows and validate information against large regulatory datasets." data-es="Desarrollé pipelines ETL en Python para automatizar procesos de auditoría y validar información contra bases regulatorias a gran escala.">Desarrollé pipelines ETL en Python para automatizar procesos de auditoría y validar información contra bases regulatorias a gran escala.</li>
+          <li data-en="Increased audit processing efficiency by |60%| through custom reporting tools and Agile delivery." data-es="Incrementé la eficiencia del procesamiento de auditorías un |60 %| mediante herramientas de reporting y metodologías Agile.">Incrementé la eficiencia del procesamiento de auditorías un <b>60 %</b> mediante herramientas de reporting y metodologías Agile.</li>
         </ul>
       </div>
     </div>
@@ -504,7 +504,7 @@
         <h4 data-en="Customer Experience Manager" data-es="Responsable de experiencia de cliente">Responsable de experiencia de cliente</h4>
         <div class="org" data-en="Cafeseamos · Calpe, Spain" data-es="Cafeseamos · Calpe, España">Cafeseamos · Calpe, España</div>
         <ul>
-          <li data-en="Ran a front of house team of 6 and owned complex client issues from start to finish, showing range beyond the technical track." data-es="Coordiné un equipo de sala de seis personas y gestioné incidencias complejas de clientes de principio a fin.">Coordiné un equipo de sala de seis personas y gestioné incidencias complejas de clientes de principio a fin.</li>
+          <li data-en="Managed a six person front of house team and handled complex customer issues from start to finish." data-es="Coordiné un equipo de sala de seis personas y gestioné incidencias complejas de clientes de principio a fin.">Coordiné un equipo de sala de seis personas y gestioné incidencias complejas de clientes de principio a fin.</li>
           <li data-en="Worked directly with an international customer base while relocating to Europe." data-es="Trabajé con una clientela internacional durante mi traslado a Europa.">Trabajé con una clientela internacional durante mi traslado a Europa.</li>
         </ul>
       </div>
@@ -515,8 +515,8 @@
         <h4 data-en="Business Continuity Team Lead" data-es="Líder de equipo de continuidad de negocio">Líder de equipo de continuidad de negocio</h4>
         <div class="org" data-en="Loginter SA · Argentina (3PL, 1,200+ staff)" data-es="Loginter SA · Argentina (3PL, +1.200 empleados)">Loginter SA · Argentina (3PL, +1.200 empleados)</div>
         <ul>
-          <li data-en="Designed SQL pipelines and Power BI reports on TMS and WMS data, cutting operational and shipping costs by |−13%|." data-es="Diseñé pipelines SQL e informes en Power BI sobre datos de TMS y WMS, reduciendo los costes operativos y de transporte un |13 %|.">Diseñé pipelines SQL e informes en Power BI sobre datos de TMS y WMS, reduciendo los costes operativos y de transporte un <b>13 %</b>.</li>
-          <li data-en="Led a team of 5, where decisions grounded in data cut invoicing costs by |−5%|." data-es="Lideré un equipo de cinco personas y utilicé análisis de datos para reducir los costes de facturación un |5 %|.">Lideré un equipo de cinco personas y utilicé análisis de datos para reducir los costes de facturación un <b>5 %</b>.</li>
+          <li data-en="Designed SQL pipelines and Power BI dashboards using TMS and WMS data, reducing operating and transport costs by |13%|." data-es="Diseñé pipelines SQL e informes en Power BI sobre datos de TMS y WMS, reduciendo los costes operativos y de transporte un |13 %|.">Diseñé pipelines SQL e informes en Power BI sobre datos de TMS y WMS, reduciendo los costes operativos y de transporte un <b>13 %</b>.</li>
+          <li data-en="Led a five person team and used data driven decision making to reduce invoicing costs by |5%|." data-es="Lideré un equipo de cinco personas y utilicé análisis de datos para reducir los costes de facturación un |5 %|.">Lideré un equipo de cinco personas y utilicé análisis de datos para reducir los costes de facturación un <b>5 %</b>.</li>
         </ul>
       </div>
     </div>
@@ -526,8 +526,8 @@
         <h4 data-en="Supplier Quality Engineer (SQA)" data-es="Ingeniero de calidad de proveedores (SQA)">Ingeniero de calidad de proveedores (SQA)</h4>
         <div class="org" data-en="Volkswagen supplier · Argentina" data-es="Proveedor de Volkswagen · Argentina">Proveedor de Volkswagen · Argentina</div>
         <ul>
-          <li data-en="Resolved recurring non conformities with German and Polish suppliers, reducing |9,000 PPM| and defects by 21%." data-es="Resolví no conformidades recurrentes con proveedores de Alemania y Polonia, reduciendo |9.000 PPM| y los defectos un 21 %.">Resolví no conformidades recurrentes con proveedores de Alemania y Polonia, reduciendo <b>9.000 PPM</b> y los defectos un 21 %.</li>
-          <li data-en="Upskilled and led 4 quality technicians in 3 months." data-es="Formé y coordiné a cuatro técnicos de calidad en tres meses.">Formé y coordiné a cuatro técnicos de calidad en tres meses.</li>
+          <li data-en="Resolved recurring supplier quality issues with German and Polish suppliers, reducing defects by |9,000 PPM| and lowering defect rates by 21%." data-es="Resolví no conformidades recurrentes con proveedores de Alemania y Polonia, reduciendo |9.000 PPM| y los defectos un 21 %.">Resolví no conformidades recurrentes con proveedores de Alemania y Polonia, reduciendo <b>9.000 PPM</b> y los defectos un 21 %.</li>
+          <li data-en="Trained and coordinated four quality technicians within three months." data-es="Formé y coordiné a cuatro técnicos de calidad en tres meses.">Formé y coordiné a cuatro técnicos de calidad en tres meses.</li>
         </ul>
       </div>
     </div>
@@ -537,8 +537,8 @@
         <h4 data-en="Warranty / Product Engineer" data-es="Ingeniero de garantía / producto">Ingeniero de garantía / producto</h4>
         <div class="org" data-en="Stellantis plant · Argentina" data-es="Planta de Stellantis · Argentina">Planta de Stellantis · Argentina</div>
         <ul>
-          <li data-en="Root cause analysis on manufacturing data cut defects by |15,000 PPM| in 9 months." data-es="El análisis de causa raíz sobre datos de fabricación redujo los defectos en |15.000 PPM| en nueve meses.">El análisis de causa raíz sobre datos de fabricación redujo los defectos en <b>15.000 PPM</b> en nueve meses.</li>
-          <li data-en="Built a daily KPI dashboard consolidating 10+ data sources to replace manual reporting." data-es="Desarrollé un cuadro de mando diario que consolidaba más de diez fuentes de datos y sustituyó el reporting manual.">Desarrollé un cuadro de mando diario que consolidaba más de diez fuentes de datos y sustituyó el reporting manual.</li>
+          <li data-en="Root cause analysis of manufacturing data reduced defects by |15,000 PPM| within nine months." data-es="El análisis de causa raíz sobre datos de fabricación redujo los defectos en |15.000 PPM| en nueve meses.">El análisis de causa raíz sobre datos de fabricación redujo los defectos en <b>15.000 PPM</b> en nueve meses.</li>
+          <li data-en="Developed a daily KPI dashboard that consolidated more than ten data sources and replaced manual reporting." data-es="Desarrollé un cuadro de mando diario que consolidaba más de diez fuentes de datos y sustituyó el reporting manual.">Desarrollé un cuadro de mando diario que consolidaba más de diez fuentes de datos y sustituyó el reporting manual.</li>
         </ul>
       </div>
     </div>
@@ -558,17 +558,17 @@
   <div class="wrap" style="padding:0 24px">
   <div class="duo">
     <div class="about rv">
-      <p class="big" data-en="Italian by nationality, but with a life lived between Europe and Argentina." data-es="Italiano de nacionalidad y con una trayectoria entre Europa y Argentina.">Italiano de nacionalidad y con una trayectoria entre Europa y Argentina.</p>
-      <p data-en="On a personal level, I think that contrast explains why I adapt easily: I do my best work in unfamiliar territory and I enjoy stepping into new contexts. My next base will be |Madrid, starting October 2026|."
+      <p class="big" data-en="Italian by nationality, with a career shaped by both Europe and Argentina." data-es="Italiano de nacionalidad y con una trayectoria entre Europa y Argentina.">Italiano de nacionalidad y con una trayectoria entre Europa y Argentina.</p>
+      <p data-en="That mix explains why I adapt quickly. I enjoy working in unfamiliar environments and tend to do my best work when the context is new. My next base will be |Madrid, starting October 2026|."
          data-es="Ese recorrido explica por qué me adapto con facilidad. Disfruto trabajando en entornos nuevos y suelo rendir mejor cuando el contexto cambia. Mi próxima base será |Madrid a partir de octubre de 2026|.">Ese recorrido explica por qué me adapto con facilidad. Disfruto trabajando en entornos nuevos y suelo rendir mejor cuando el contexto cambia. Mi próxima base será <span class="hl">Madrid a partir de octubre de 2026</span>.</p>
-      <p data-en="My approach has always been the same: turning operational reality into systems that hold up, first on the factory floor and now with Machine Learning. While finishing my Industrial Engineering degree I also ran |two small ventures| of my own, a recreational activity built around sand drawing and a marketing project where I kept live metrics dashboards for clients. What I am looking for now is a team where I can put all of that to work and keep building."
+      <p data-en="My approach has always been the same: turning operational problems into reliable systems. First on the factory floor, and now with machine learning. While completing my Industrial Engineering degree, I also built |two small businesses|: a sand art activity and a marketing project where I maintained live performance dashboards for clients. I'm now looking for a team where I can keep building practical solutions."
          data-es="Mi forma de trabajar siempre ha sido la misma: convertir problemas operativos en sistemas fiables. Primero en planta y ahora con Machine Learning. Mientras terminaba Ingeniería Industrial también desarrollé |dos proyectos propios|: una actividad recreativa basada en dibujo en arena y un proyecto de marketing donde mantenía cuadros de mando en tiempo real para clientes. Ahora busco un equipo donde seguir construyendo ese tipo de soluciones.">Mi forma de trabajar siempre ha sido la misma: convertir problemas operativos en sistemas fiables. Primero en planta y ahora con Machine Learning. Mientras terminaba Ingeniería Industrial también desarrollé <span class="hl">dos proyectos propios</span>: una actividad recreativa basada en dibujo en arena y un proyecto de marketing donde mantenía cuadros de mando en tiempo real para clientes. Ahora busco un equipo donde seguir construyendo ese tipo de soluciones.</p>
     </div>
     <div class="traits rv">
-      <div class="trait"><span class="no">A</span><div class="t"><b data-en="Driven by getting things done" data-es="Hacer que las cosas ocurran">Hacer que las cosas ocurran</b><span data-en="Skilled at shipping something that works, and also able to polish the slides about it." data-es="Me gusta entregar soluciones que funcionan y comunicar su valor con claridad.">Me gusta entregar soluciones que funcionan y comunicar su valor con claridad.</span></div></div>
-      <div class="trait"><span class="no">B</span><div class="t"><b data-en="Systems thinking under pressure" data-es="Pensamiento sistémico">Pensamiento sistémico</b><span data-en="When things break, I map the system instead of panicking." data-es="Cuando surge un problema, empiezo por entender el sistema antes de buscar una solución.">Cuando surge un problema, empiezo por entender el sistema antes de buscar una solución.</span></div></div>
-      <div class="trait"><span class="no">C</span><div class="t"><b data-en="Good to have in the room" data-es="Buen compañero de equipo">Buen compañero de equipo</b><span data-en="I build a good team climate, easy to work with, and I do the work." data-es="Trabajo bien con otras personas, genero confianza y cumplo con lo que me comprometo.">Trabajo bien con otras personas, genero confianza y cumplo con lo que me comprometo.</span></div></div>
-      <div class="trait"><span class="no">D</span><div class="t"><b data-en="Languages are no barrier" data-es="Los idiomas no son límites">Los idiomas no son límites</b><span data-en="Italian and Spanish native, English fluent (C1), French basic (A2)." data-es="Italiano y español nativos, inglés fluido (C1), francés básico (A2).">Italiano y español nativos, inglés fluido (C1), francés básico (A2).</span></div></div>
+      <div class="trait"><span class="no">A</span><div class="t"><b data-en="I focus on getting things done" data-es="Hacer que las cosas ocurran">Hacer que las cosas ocurran</b><span data-en="I enjoy building solutions that work and explaining them clearly." data-es="Me gusta entregar soluciones que funcionan y comunicar su valor con claridad.">Me gusta entregar soluciones que funcionan y comunicar su valor con claridad.</span></div></div>
+      <div class="trait"><span class="no">B</span><div class="t"><b data-en="Systems thinking" data-es="Pensamiento sistémico">Pensamiento sistémico</b><span data-en="When something goes wrong, I start by understanding the system before looking for a solution." data-es="Cuando surge un problema, empiezo por entender el sistema antes de buscar una solución.">Cuando surge un problema, empiezo por entender el sistema antes de buscar una solución.</span></div></div>
+      <div class="trait"><span class="no">C</span><div class="t"><b data-en="Easy to work with" data-es="Buen compañero de equipo">Buen compañero de equipo</b><span data-en="I build trust quickly, work well with others, and follow through on my commitments." data-es="Trabajo bien con otras personas, genero confianza y cumplo con lo que me comprometo.">Trabajo bien con otras personas, genero confianza y cumplo con lo que me comprometo.</span></div></div>
+      <div class="trait"><span class="no">D</span><div class="t"><b data-en="Languages are not a barrier" data-es="Los idiomas no son límites">Los idiomas no son límites</b><span data-en="Native Italian and Spanish, fluent English (C1), basic French (A2)." data-es="Italiano y español nativos, inglés fluido (C1), francés básico (A2).">Italiano y español nativos, inglés fluido (C1), francés básico (A2).</span></div></div>
     </div>
   </div>
   </div>
@@ -615,7 +615,7 @@
     <div class="eyebrow rv"><span class="dot"></span> <span data-en="LET'S TALK" data-es="HABLEMOS">HABLEMOS</span></div>
     <h2 class="rv" data-en="Looking for my next team |in Spain|" data-es="Busco mi próximo equipo |en España|">Busco mi próximo equipo <span class="hl">en España</span></h2>
     <p class="rv" style="margin-top:20px;max-width:56ch;color:#cfcfcf;font-size:15px;line-height:1.6"
-       data-en="Industrial engineer with an Advanced Master in AI. My next base is |Madrid, starting October 2026|. If that fits what you are building, I would be glad to talk."
+       data-en="Industrial Engineer with an Advanced Master's in AI. I'll be based in |Madrid, starting October 2026|. If you think I could contribute to your team, I'd be happy to talk."
        data-es="Ingeniero industrial con un Advanced Master en IA. Estaré basado en |Madrid a partir de octubre de 2026|. Si crees que puedo aportar valor a vuestro equipo, estaré encantado de hablar.">Ingeniero industrial con un Advanced Master en IA. Estaré basado en <span class="hl">Madrid a partir de octubre de 2026</span>. Si crees que puedo aportar valor a vuestro equipo, estaré encantado de hablar.</p>
     <div class="cta rv">
       <a class="primary" id="mailcta" href="mailto:frescalorenzo@gmail.com?subject=Ingeniero%20industrial%20%2B%20IA%2C%20disponible%20en%20Espa%C3%B1a%20desde%20oct%202026">frescalorenzo@gmail.com ↗</a>
@@ -704,8 +704,13 @@
 })();
 
 /* ---- reveal on scroll ---- */
+document.documentElement.classList.add('js-anim');
 const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
 document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+// Red de seguridad: si algo impide el reveal, mostrar todo tras 1.2s
+setTimeout(()=>{document.querySelectorAll('.rv:not(.in)').forEach(el=>el.classList.add('in'));},1200);
+// Evitar que el navegador restaure una posición de scroll intermedia al recargar
+if('scrollRestoration' in history){history.scrollRestoration='manual';}
 
 /* ---- V1: defect AUPR, 7 models, offline vs online (Real-IAD) ---- */
 /* AUPR offline from thesis slide 6; online = offline + Δ (slide 7). Scaled 70→100 so gaps show. */
